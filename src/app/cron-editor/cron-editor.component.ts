@@ -415,7 +415,6 @@ export class CronGenComponent implements OnInit, OnChanges {
       this.state.minutes.minutes = parseInt(minutes.substring(2));
       this.state.minutes.seconds = parseInt(seconds);
     } else if (cron.match(/\d+ \d+ 0\/\d+ 1\/1 \* [\?\*] \*/)) {
-      
       this.state.hourly.hours = parseInt(hours.substring(2));
       this.state.hourly.minutes = parseInt(minutes);
       this.state.hourly.seconds = parseInt(seconds);
